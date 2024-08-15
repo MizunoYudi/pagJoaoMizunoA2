@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faixa Etária</title>
+    <script type="text/javascript" src="script/faixa_etaria.js"></script>
+</head>
+<body>
+    <header>
+        <h1>
+            Mostrar a Quantidade de Pessoas por Faixa Etária
+        </h1>
+    </header>
+    <hr>
+    <form>
+        <label for="p1">Insira a idade da 1° pessoa: </label>
+        <br>
+        <input type="number" step="0" id="p1" name="p1">
+        <br><br>
+        <label for="p2">Insira a idade da 2° pessoa: </label>
+        <br>
+        <input type="number" step="0" id="p2" name="p2">
+        <br><br>
+        <label for="p3">Insira a idade da 3° pessoa: </label>
+        <br>
+        <input type="number" step="0" id="p3" name="p3">
+        <br><br>
+        <label for="p4">Insira a idade da 4° pessoa: </label>
+        <br>
+        <input type="number" step="0" id="p4" name="p4">
+        <br><br>
+        <label for="p5">Insira a idade da 5° pessoa: </label>
+        <br>
+        <input type="number" step="0" id="p5" name="p5">
+        <br><br>
+        <button type="button" id="exibir" name="exibir" onclick="faixa_etaria(this.form)">Exibir</button>
+        <button type="reset" id="limpar" name="limpar">Limpar</button>
+        <br><br>
+        <pre>
+        _________________________
+        |     Faixas Etárias     |
+        |------------------------|
+        | 1 | Até 15 anos        |
+        |------------------------|
+        | 2 | De 16 a 40 anos    |
+        |------------------------|
+        | 3 | Acima de 40 anos   | 
+        --------------------------
+        </pre>
+        <h2>Resultados:</h2>
+        <p id="resultado"></p>
+    </form>
+</body>
+</html>
